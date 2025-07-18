@@ -1,0 +1,100 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333; 
+    margin: 0;
+    padding: 20px;
+}
+
+input, button {
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0078d4; 
+    box-shadow: 0 0 5px #0078d4;
+}
+
+button {
+    background-color: #0078d4; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #f9f9f9; 
+}
+
+.Completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-button {
+    display: flex;
+    gap: 10px;
+}
+
+.task-button button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.task-button button.complete {
+    background-color: #28a745; 
+    color: white;
+}
+
+.task-button button.complete:hover {
+    background-color: #218838; 
+}
+
+.task-button button.delete {
+    background-color: #dc3545; 
+    color: white;
+}
+
+.task-button button.delete:hover {
+    background-color: #c82333; 
+}
